@@ -1,3 +1,4 @@
+/* Variables de couleurs basées sur ton CV */
 :root {
     --primary-color: #315C7A; 
     --secondary-color: #E8ECEF; 
@@ -126,20 +127,41 @@ section {
     gap: 8px;
 }
 
+/* Boutons */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     background-color: var(--primary-color);
     color: var(--white);
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 15px;
     font-weight: bold;
     transition: 0.3s;
+    border: 2px solid var(--primary-color);
 }
 
 .btn:hover {
     background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
 }
 
 .hero-image {
@@ -233,6 +255,10 @@ section {
     box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
 
+.timeline-content p {
+    margin-bottom: 10px;
+}
+
 .timeline-content ul {
     margin-top: 10px;
     padding-left: 20px;
@@ -322,10 +348,10 @@ footer {
         flex-direction: column-reverse;
         text-align: center;
     }
-    .contact-info {
+    .contact-info, .hero-buttons {
         justify-content: center;
     }
     nav ul {
-        display: none; 
+        display: none;
     }
 }

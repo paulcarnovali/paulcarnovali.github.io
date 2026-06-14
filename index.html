@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Paul Carnovali</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Intégration de FontAwesome pour les icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- Barre de navigation -->
     <nav>
         <div class="nav-content">
             <h2>Paul.C</h2>
@@ -22,13 +24,13 @@
         </div>
     </nav>
 
+    <!-- Section Accueil -->
     <section id="accueil" class="hero">
         <div class="hero-container">
             <div class="hero-text">
                 <h1>Paul CARNOVALI</h1>
                 <h2>Étudiant en Science des Données</h2>
                 <p>Actuellement en BUT Science des Données, passionné par l'analyse statistique et le développement de solutions basées sur la data.</p>
-                <p><strong>Disponibilité :</strong> 7 Avril - 12 Juin</p>
                 
                 <div class="contact-info">
                     <span><i class="fas fa-map-marker-alt"></i> Puilboreau (17138)</span>
@@ -37,7 +39,11 @@
                     <span><i class="fas fa-car"></i> Permis B</span>
                 </div>
                 
-                <a href="#projets" class="btn">Voir mes projets</a>
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn">Voir mes projets</a>
+                    <!-- Bouton de téléchargement du CV -->
+                    <a href="CV SD.jpg" download="CV_Paul_Carnovali.jpg" class="btn btn-outline"><i class="fas fa-download"></i> Télécharger mon CV</a>
+                </div>
             </div>
             <div class="hero-image">
                 <img src="images/profil.jpg" alt="Photo de Paul Carnovali">
@@ -45,6 +51,7 @@
         </div>
     </section>
 
+    <!-- Section Compétences -->
     <section id="competences" class="section-bg">
         <h2 class="section-title">Mes Compétences</h2>
         <div class="skills-grid">
@@ -71,9 +78,28 @@
         </div>
     </section>
 
+    <!-- Section Expérience -->
     <section id="experience">
         <h2 class="section-title">Expérience Professionnelle</h2>
         <div class="timeline">
+            <!-- Stage Macif -->
+            <div class="timeline-item">
+                <div class="timeline-date">07/04/2026 - 26/06/2026[cite: 1]</div>
+                <div class="timeline-content">
+                    <h3>Stagiaire Data - Direction du Marché des Professionnels, des Entreprises & de l'ESS[cite: 1]</h3>
+                    <h4>Macif - Niort[cite: 1]</h4>
+                    <p><strong>Projet :</strong> De la donnée brute à la vision actuarielle : Refonte et automatisation du pipeline d'analyse des flottes automobiles.[cite: 1]</p>
+                    <ul>
+                        <li>Migration, modernisation et automatisation du processus de suivi technique des flottes automobiles, avec un passage d'un environnement historique SAS vers la plateforme Dataiku.[cite: 1]</li>
+                        <li>Rétro-ingénierie et traduction de la logique métier (calculs d'exposition, proratas financiers) en algorithmes optimisés en SQL.[cite: 1]</li>
+                        <li>Gestion fine des jointures temporelles et des historiques de contrats.[cite: 1]</li>
+                        <li>Implémentation d'un module de provisionnement actuariel en Python utilisant la méthode Chain Ladder pour projeter la charge ultime des sinistres et obtenir des indications de prédictions.[cite: 1]</li>
+                        <li>Création d'un pipeline de données robuste, entièrement automatisé et documenté pour les équipes métiers.[cite: 1]</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Expérience IceBoxer -->
             <div class="timeline-item">
                 <div class="timeline-date">07/2020 - Actuel</div>
                 <div class="timeline-content">
@@ -87,6 +113,8 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Expérience Mairie -->
             <div class="timeline-item">
                 <div class="timeline-date">08/2025 - 08/2025</div>
                 <div class="timeline-content">
@@ -101,6 +129,7 @@
         </div>
     </section>
 
+    <!-- Section Formation -->
     <section id="formation" class="section-bg">
         <h2 class="section-title">Formation</h2>
         <div class="timeline">
@@ -143,36 +172,40 @@
         </div>
     </section>
 
+    <!-- Section Projets SAE -->
     <section id="projets">
         <h2 class="section-title">Mes Projets Universitaires (SAE)</h2>
         <div class="projects-grid">
+            <!-- Projet 1 -->
             <div class="project-card">
                 <div class="project-content">
                     <span class="project-tag">SAE 1</span>
                     <h3>Recueil et modélisation de données</h3>
-                    <p>Description du projet : Création d'une base de données optimisée et premières requêtes d'analyse pour dégager des indicateurs clés.</p>
+                    <p>Création d'une base de données optimisée et premières requêtes d'analyse pour dégager des indicateurs clés.</p>
                     <div class="project-skills">
                         <span>SQL</span>
                         <span>Python</span>
                     </div>
                 </div>
             </div>
+            <!-- Projet 2 -->
             <div class="project-card">
                 <div class="project-content">
                     <span class="project-tag">SAE 2</span>
                     <h3>Exploration et Dataviz</h3>
-                    <p>Description du projet : Analyse exploratoire de jeux de données complexes et réalisation de tableaux de bord interactifs.</p>
+                    <p>Analyse exploratoire de jeux de données complexes et réalisation de tableaux de bord interactifs.</p>
                     <div class="project-skills">
                         <span>R (Shiny)</span>
                         <span>Statistiques</span>
                     </div>
                 </div>
             </div>
+            <!-- Projet 3 -->
             <div class="project-card">
                 <div class="project-content">
                     <span class="project-tag">SAE 3</span>
                     <h3>Migration et intégration de données</h3>
-                    <p>Description du projet : Traitement et automatisation de flux de données depuis des formats anciens vers de nouvelles plateformes de Data Science.</p>
+                    <p>Traitement et automatisation de flux de données depuis des formats anciens vers de nouvelles plateformes de Data Science.</p>
                     <div class="project-skills">
                         <span>SAS</span>
                         <span>Dataiku</span>
@@ -182,6 +215,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>© 2026 Paul Carnovali - Étudiant en Science des Données</p>
         <p>Centres d'intérêt : Automobile | Cinéma | High-Tech</p>
