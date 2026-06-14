@@ -1,11 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>tplm</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Paul Carnovali</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-	<p>Bonjour !</p>
+
+    <nav>
+        <div class="nav-content">
+            <h2>Paul.C</h2>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#projets">Projets SAE</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="accueil" class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Paul CARNOVALI</h1>
+                <h2>Étudiant en Science des Données</h2>
+                <p>Actuellement en BUT Science des Données, passionné par l'analyse statistique et le développement de solutions basées sur la data.</p>
+                <p><strong>Disponibilité :</strong> 7 Avril - 12 Juin</p>
+                
+                <div class="contact-info">
+                    <span><i class="fas fa-map-marker-alt"></i> Puilboreau (17138)</span>
+                    <span><i class="fas fa-envelope"></i> paul.carnovali@gmail.com</span>
+                    <span><i class="fas fa-phone"></i> 06 78 07 08 87</span>
+                    <span><i class="fas fa-car"></i> Permis B</span>
+                </div>
+                
+                <a href="#projets" class="btn">Voir mes projets</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/profil.jpg" alt="Photo de Paul Carnovali">
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="section-bg">
+        <h2 class="section-title">Mes Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-chart-bar skill-icon"></i>
+                <h3>Statistiques & Data Science</h3>
+                <p>R, SAS, VBA, Python</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database skill-icon"></i>
+                <h3>Bases de données</h3>
+                <p>SQL</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code skill-icon"></i>
+                <h3>Langages Web</h3>
+                <p>HTML, CSS, PHP</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-language skill-icon"></i>
+                <h3>Langues</h3>
+                <p>Anglais (C1)<br>Allemand (B1)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Expérience Professionnelle</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">07/2020 - Actuel</div>
+                <div class="timeline-content">
+                    <h3>Bénévole - IceBoxer</h3>
+                    <h4>La Rochelle</h4>
+                    <ul>
+                        <li><strong>Trésorier :</strong> gestion des comptes de l'association, recherche de subventions et partenaires.</li>
+                        <li><strong>Directeur de Production :</strong> Larsen (émission musicale), reportages Francofolies/NotesenVert pour C17infos.</li>
+                        <li><strong>Webmaster :</strong> gestion du site www.iceboxer.fr.</li>
+                        <li><strong>Activité Audiovisuelle :</strong> monteur, cadreur, présentateur.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">08/2025 - 08/2025</div>
+                <div class="timeline-content">
+                    <h3>Agent de surveillance de la voie publique (CDD)</h3>
+                    <h4>Mairie de La Rochelle</h4>
+                    <ul>
+                        <li>Contrôles routiers et vérification des documents de véhicules.</li>
+                        <li>Échanges et aide aux passants.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formation" class="section-bg">
+        <h2 class="section-title">Formation</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2025 - 2027</div>
+                <div class="timeline-content">
+                    <h3>BUT Science des Données</h3>
+                    <h4>Université de Poitiers - Niort</h4>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2023 - 2025</div>
+                <div class="timeline-content">
+                    <h3>Licence Mathématiques</h3>
+                    <h4>Université - La Rochelle</h4>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2023</div>
+                <div class="timeline-content">
+                    <h3>Diplôme d'université Tremplin</h3>
+                    <h4>Université - La Rochelle</h4>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2022 - 2023</div>
+                <div class="timeline-content">
+                    <h3>BUT Techniques de commercialisation</h3>
+                    <h4>IUT - La Rochelle</h4>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2019 - 2022</div>
+                <div class="timeline-content">
+                    <h3>Baccalauréat Général (Mention Bien)</h3>
+                    <h4>Lycée Vieljeux - La Rochelle</h4>
+                    <p>Spécialité Maths et NSI, option Maths Expertes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets">
+        <h2 class="section-title">Mes Projets Universitaires (SAE)</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <span class="project-tag">SAE 1</span>
+                    <h3>Recueil et modélisation de données</h3>
+                    <p>Description du projet : Création d'une base de données optimisée et premières requêtes d'analyse pour dégager des indicateurs clés.</p>
+                    <div class="project-skills">
+                        <span>SQL</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <span class="project-tag">SAE 2</span>
+                    <h3>Exploration et Dataviz</h3>
+                    <p>Description du projet : Analyse exploratoire de jeux de données complexes et réalisation de tableaux de bord interactifs.</p>
+                    <div class="project-skills">
+                        <span>R (Shiny)</span>
+                        <span>Statistiques</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <span class="project-tag">SAE 3</span>
+                    <h3>Migration et intégration de données</h3>
+                    <p>Description du projet : Traitement et automatisation de flux de données depuis des formats anciens vers de nouvelles plateformes de Data Science.</p>
+                    <div class="project-skills">
+                        <span>SAS</span>
+                        <span>Dataiku</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Paul Carnovali - Étudiant en Science des Données</p>
+        <p>Centres d'intérêt : Automobile | Cinéma | High-Tech</p>
+        <div class="socials">
+            <a href="https://github.com/TON_PROFIL_GITHUB" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/TON_PROFIL_LINKEDIN" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
 </body>
 </html>
